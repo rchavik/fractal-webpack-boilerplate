@@ -1,0 +1,36 @@
+{
+  "name": "fractal-webpack-boilerplate",
+  "description": "Test Design System",
+  "version": "1.0.0",
+  "repository": "https://github.com/supernaut/fractal-webpack-boilerplate",
+  "license": "MIT",
+  "scripts": {
+    "dev": "webpack --config webpack.dev.js --watch --progress --hide-modules",
+    "webpack-build": "webpack --config webpack.prod.js --hide-modules",
+    "fractal-build": "fractal build",
+    "build": "npm run webpack-build && npm run fractal-build",
+    "ci-build": "webpack --config webpack.prod.js --env.ci=true --progress --hide-modules"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@frctl/fractal": "^1.2.1",
+    "@frctl/twig": "^1.1.0",
+    "autoprefixer": "^9.1.5",
+    "clean-webpack-plugin": "^0.1.19",
+    "copy-webpack-plugin": "^4.5.2",
+    "css-loader": "^1.0.0",
+    "file-loader": "^2.0.0",
+    "fractal-webpack-plugin": "^2.0.1",
+    "mini-css-extract-plugin": "^0.4.3",
+    "mono-fractal": "^1.0.1",
+    "node-sass": "^4.9.3",
+    "optimize-css-assets-webpack-plugin": "^5.0.1",
+    "postcss-loader": "^3.0.0",
+    "postcss-object-fit-images": "^1.1.2",
+    "sass-loader": "^7.1.0",
+    "url-loader": "^1.1.1",
+    "webpack": "^4.19.1",
+    "webpack-cli": "^3.1.0",
+    "webpack-merge": "^4.1.4"
+  }
+}
